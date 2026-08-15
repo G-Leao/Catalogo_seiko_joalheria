@@ -11,7 +11,7 @@
   };
   /* Hero slideshow images - customize paths here */
   const HERO_IMAGES = [
-    "./assets/hero/herogravina.png",
+    "./assets/hero/HEROGRAVINA.png",
     "./assets/hero/HEROGRAVINA1.png",
     "./assets/hero/HEROGRAVINA2.png",
   ];
@@ -319,7 +319,7 @@
   }
   function startHero() {
     stopHero();
-    heroTimer = setInterval(nextHero, 8000);
+    heroTimer = setInterval(nextHero, 4000);
   }
   function stopHero() {
     if (heroTimer) {
