@@ -640,24 +640,38 @@ button {
   z-index: 6;
   display: flex;
   align-items: center;
+  gap: 8px;
   justify-content: center;
   padding: 4px 6px;
   background: rgba(255, 255, 255, 0.9);
   border-radius: 4px;
   box-shadow: var(--shadow-sm);
+  max-width: 38%;
 }
 .modal__brand-logo img {
-  height: 22px;
-  max-width: 120px;
+  height: 20px;
+  max-width: 88px;
   object-fit: contain;
   display: block;
 }
 .modal__brand-wordmark {
   font-family: var(--serif);
-  font-size: 93px;
-  letter-spacing: 0.22em;
+  font-size: 14px;
+  letter-spacing: 0.18em;
   color: var(--ink);
   display: inline-block;
+  margin-left: 6px;
+}
+/* Responsive adjustments for the brand logo to avoid occupying too much space on smaller screens */
+@media (max-width: 880px) {
+  .modal__brand-logo img { height: 18px; max-width: 72px; }
+  .modal__brand-wordmark { font-size: 12px; }
+}
+@media (max-width: 640px) {
+  .modal__brand-logo { top: 8px; left: 8px; padding: 3px 5px; }
+  .modal__brand-logo img { height: 16px; max-width: 60px; }
+  /* hide the textual wordmark on very small viewports to save space */
+  .modal__brand-wordmark { display: none; }
 }
 .modal__media-frame {
   border: 1px solid var(--line);
@@ -1028,9 +1042,21 @@ button {
   .container {
     padding: 0 18px;
   }
+  /* Switch to a horizontal single-item scroller on small screens so only one card is visible at a time */
   .grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    display: flex;
     gap: 16px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+  }
+  /* hide native scrollbar on webkit browsers for a cleaner look */
+  .grid::-webkit-scrollbar { display: none; }
+  .card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
   }
   .card__body {
     padding: 14px 14px 18px;
