@@ -43,7 +43,8 @@ const DEFAULT_PRODUCTS = [
       bracelet: "Aço inoxidável",
       waterResistance: "10 bar / 100 m",
       powerReserve: "Aproximadamente 6 meses com carga completa",
-      functions: "Cronógrafo até 60 min em incrementos de 1/5 s, indicador de 24 h, segundos pequenos, data, reserva de marcha e proteção contra sobrecarga",
+      functions:
+        "Cronógrafo até 60 min em incrementos de 1/5 s, indicador de 24 h, segundos pequenos, data, reserva de marcha e proteção contra sobrecarga",
       dialColor: "Verde-claro / verde-menta",
     },
   },
@@ -53,8 +54,8 @@ const DEFAULT_PRODUCTS = [
     brand: "Seiko",
     collection: "Presage",
     name: "Seiko Presage Cocktail MockingBird",
-    model: "SRP15",
-    reference: "SRP15J1-E1SX",
+    model: "SRPE15",
+    reference: "SRPE15J1-E1SX",
     price: "10X R$ 478,50",
     image: "./assets/relogios/SRP15J1-E1SX.png",
     available: true,
@@ -96,7 +97,8 @@ const DEFAULT_PRODUCTS = [
       bracelet: "Aço inoxidável",
       waterResistance: "Diver's 200 m",
       powerReserve: "Aproximadamente 41 horas",
-      functions: "Parada de segundos, calendário/data e bisel rotativo unidirecional",
+      functions:
+        "Parada de segundos, calendário/data e bisel rotativo unidirecional",
       dialColor: "Verde",
     },
   },
@@ -130,7 +132,7 @@ const DEFAULT_PRODUCTS = [
   {
     id: 5,
     brand: "Seiko",
-    collection: "Samurai",
+    collection: "Prospex",
     name: "Seiko Samurai",
     model: "SRPL11",
     reference: "SRPL11B1-N1SX",
@@ -156,7 +158,7 @@ const DEFAULT_PRODUCTS = [
   {
     id: 6,
     brand: "Seiko",
-    collection: "Samurai",
+    collection: "Prospex",
     name: "Seiko Samurai",
     model: "SRPL51",
     reference: "SRPL51B1-D1SX",
@@ -201,7 +203,8 @@ const DEFAULT_PRODUCTS = [
       bracelet: "Aço inoxidável",
       waterResistance: "10 ATM / 100 m",
       powerReserve: "Aproximadamente 41 horas",
-      functions: "GMT/segundo fuso horário, indicador de 24 h, data, parada de segundos e bisel rotativo de 24 h",
+      functions:
+        "GMT/segundo fuso horário, indicador de 24 h, data, parada de segundos e bisel rotativo de 24 h",
       dialColor: "Azul",
     },
   },
@@ -227,7 +230,8 @@ const DEFAULT_PRODUCTS = [
       bracelet: "Aço inoxidável",
       waterResistance: "10 ATM / 100 m",
       powerReserve: "Aproximadamente 41 horas",
-      functions: "GMT/segundo fuso horário, indicador de 24 h, data, parada de segundos e bisel rotativo de 24 h",
+      functions:
+        "GMT/segundo fuso horário, indicador de 24 h, data, parada de segundos e bisel rotativo de 24 h",
       dialColor: "Preto",
     },
   },
@@ -253,7 +257,8 @@ const DEFAULT_PRODUCTS = [
       bracelet: "Aço inoxidável",
       waterResistance: "10 bar / 100 m",
       powerReserve: "Aproximadamente 41 horas",
-      functions: "GMT/segundo fuso horário, indicador de 24 h, data e parada de segundos",
+      functions:
+        "GMT/segundo fuso horário, indicador de 24 h, data e parada de segundos",
       dialColor: "Branco/prateado",
     },
   },
@@ -340,8 +345,8 @@ const DEFAULT_PRODUCTS = [
     brand: "Seiko",
     collection: "Reduced",
     name: "Seiko Reduced",
-    model: "SRBL79",
-    reference: "SRBL79B1-G1SX",
+    model: "SRPL79",
+    reference: "SRPL79B1-G1SX",
     price: "10X R$340",
     image: "./assets/relogios/SRBL79B1-G1SX.png",
     available: true,
@@ -425,6 +430,7 @@ const DEFAULT_PRODUCTS = [
       dialColor: "Azul-claro/prateado",
     },
   },
+
   {
     id: 17,
     brand: "Seiko",
@@ -447,8 +453,199 @@ const DEFAULT_PRODUCTS = [
       bracelet: "Silicone",
       waterResistance: "Diver's 200 m",
       powerReserve: "Aproximadamente 41 horas",
-      functions: "Parada de segundos, dia/data, corda manual e bisel rotativo unidirecional",
+      functions:
+        "Parada de segundos, dia/data, corda manual e bisel rotativo unidirecional",
       dialColor: "Preto",
+    },
+  },
+
+  // Seiko Presage SSK049 J1 — Presage GMT
+  {
+    id: 18,
+    brand: "Seiko",
+    collection: "Presage",
+    name: "Seiko Presage GMT",
+    model: "SSK049",
+    reference: "SSK049J1",
+    price: "10X R$ 589,50",
+    image: "./assets/relogios/SSK049J1.png",
+    available: true,
+    visible: true,
+    specifications: {
+      movement: "Automático com corda manual",
+      caliber: "4R34",
+      case: "Aço inoxidável",
+      diameter: "40,5 mm",
+      thickness: "12,8 mm",
+      material: "Aço inoxidável",
+      glass: "Hardlex em formato de caixa",
+      bracelet: "Couro de vaca",
+      waterResistance: "5 ATM",
+      powerReserve: "Aproximadamente 41 horas",
+      functions:
+        "Ponteiro de 24 horas (segundo fuso horário), parada de segundos e data",
+    },
+  },
+
+  // Seiko Presage SSA441 J1 — Open Heart
+  {
+    id: 19,
+    brand: "Seiko",
+    collection: "Presage",
+    name: "Seiko Presage Open Heart",
+    model: "SSA441",
+    reference: "SSA441J1",
+    price: "10X R$ 438,50",
+    image: "./assets/relogios/SSA441J1.png",
+    available: true,
+    visible: true,
+    specifications: {
+      movement: "Automático com corda manual",
+      caliber: "4R38",
+      case: "Aço inoxidável",
+      diameter: "40,5 mm",
+      thickness: "11,8 mm",
+      material: "Aço inoxidável",
+      glass: "Hardlex em formato de caixa",
+      bracelet: "Aço inoxidável",
+      waterResistance: "5 ATM",
+      powerReserve: "Aproximadamente 41 horas",
+      functions: "Parada de segundos",
+    },
+  },
+
+  // Seiko Presage SRP45 J1 — Mojito / Negroni
+  {
+    id: 20,
+    brand: "Seiko",
+    collection: "Presage",
+    name: "Seiko Presage Mojito",
+    model: "SRP45",
+    reference: "SRPE45J1",
+    price: "10X R$ 438,50",
+    image: "./assets/relogios/SRP45J1.png",
+    available: true,
+    visible: true,
+    specifications: {
+      movement: "Automático com corda manual",
+      caliber: "4R35",
+      case: "Aço inoxidável",
+      diameter: "38,5 mm",
+      thickness: "11,8 mm",
+      material: "Aço inoxidável",
+      glass: "Hardlex",
+      bracelet: "Couro",
+      waterResistance: "5 ATM",
+      powerReserve: "Aproximadamente 41 horas",
+      functions: "Parada de segundos e data",
+    },
+  },
+
+  // Seiko Presage SRPD37 J1
+  {
+    id: 21,
+    brand: "Seiko",
+    collection: "Presage",
+    name: "Seiko Presage",
+    model: "SRPD37",
+    reference: "SRPD37J1",
+    price: "10X R$ 398,50",
+    image: "./assets/relogios/SRPD37J1.png",
+    available: true,
+    visible: true,
+    specifications: {
+      movement: "Automático com corda manual",
+      caliber: "4R35",
+      case: "Aço inoxidável",
+      diameter: "40,5 mm",
+      thickness: "11,8 mm",
+      material: "Aço inoxidável",
+      glass: "Hardlex em formato de caixa",
+      bracelet: "Couro de vaca",
+      waterResistance: "5 ATM",
+      powerReserve: "Aproximadamente 41 horas",
+      functions: "Parada de segundos e data",
+    },
+  },
+
+  // Seiko Presage SRPB46 J1
+  {
+    id: 22,
+    brand: "Seiko",
+    collection: "Presage",
+    name: "Seiko Presage",
+    model: "SRPB46",
+    reference: "SRPB46J1",
+    price: "10X R$ 498,50",
+    image: "./assets/relogios/SRPB46J1.png",
+    available: true,
+    visible: true,
+    specifications: {
+      movement: "Automático com corda manual",
+      caliber: "4R35",
+      case: "Aço inoxidável",
+      diameter: "40,5 mm",
+      thickness: "11,8 mm",
+      material: "Aço inoxidável",
+      glass: "Hardlex em formato de caixa",
+      bracelet: "Couro",
+      waterResistance: "5 ATM",
+      powerReserve: "Aproximadamente 41 horas",
+      functions: "Parada de segundos e data",
+    },
+  },
+
+  // Seiko Presage SSA405 J1
+  {
+    id: 23,
+    brand: "Seiko",
+    collection: "Presage",
+    name: "Seiko Presage",
+    model: "SSA405",
+    reference: "SSA405J1",
+    price: "10X R$ 439,50",
+    image: "./assets/relogios/SSA405J1.png",
+    available: true,
+    visible: true,
+    specifications: {
+      movement: "Automático com corda manual",
+      caliber: "4R38",
+      case: "Aço inoxidável",
+      diameter: "40,5 mm",
+      thickness: "11,8 mm",
+      material: "Aço inoxidável",
+      glass: "Hardlex em formato de caixa",
+      bracelet: "Couro de vaca",
+      waterResistance: "5 ATM",
+      powerReserve: "Aproximadamente 41 horas",
+      functions: "Parada de segundos",
+    },
+  },
+
+  // Seiko Prospex Alpinist SPB121 J1
+  {
+    id: 24,
+    brand: "Seiko",
+    collection: "Prospex",
+    name: "Seiko Alpinist",
+    model: "SPB121",
+    reference: "SPB121J1",
+    price: "10X R$ 750,00",
+    image: "./assets/relogios/SRPB121J1.png",
+    available: true,
+    visible: true,
+    specifications: {
+      movement: "Automático com corda manual",
+      caliber: "6R15",
+      case: "Aço inoxidável",
+      diameter: "39,5 mm",
+      thickness: "13,2 mm",
+      material: "Aço inoxidável",
+      glass: "Safira",
+      bracelet: "Couro",
+      waterResistance: "20 ATM",
+      powerReserve: "Aproximadamente 50 horas",
+      functions: "Data e bisel interno rotativo",
     },
   },
 ].map((p) => ({
@@ -493,7 +690,6 @@ const CATEGORIES = [
   "Todos",
   "Prospex",
   "Presage",
-  "Samurai",
   "Seiko 5 Sports GMT",
   "SKX",
   "Seiko 5 Sports",
@@ -501,6 +697,49 @@ const CATEGORIES = [
   "King Turtle",
 ];
 
+/* ============ ORDEN DE EXIBIÇÃO NA VITRINE ============
+   A vitrine NÃO segue a ordem de cadastro nem o ID dos produtos:
+   os relógios são agrupados pela linha (collection).
+
+   - A ordem dos grupos segue a lista CATEGORIES definida acima.
+   - Linhas novas (ainda não listadas em CATEGORIES) são agrupadas
+     automaticamente e aparecem ao final, em ordem alfabética.
+   - A ordenação é ESTÁVEL: dentro de cada linha se preserva a ordem
+     interna já definida no catálogo. */
+function sortByCollection(products) {
+  const known = new Map();
+  CATEGORIES.forEach((cat, i) => {
+    if (cat !== "Todos") known.set(cat, i);
+  });
+  return products
+    .map((p, index) => ({
+      p,
+      index,
+      rank: known.get(p.collection),
+      slug: String(p.collection || "").toLocaleLowerCase(),
+    }))
+    .sort((a, b) => {
+      if (a.rank !== b.rank) {
+        if (a.rank === undefined) return 1; // linhas novas ao final
+        if (b.rank === undefined) return -1;
+        return a.rank - b.rank;
+      }
+      if (a.rank === undefined) {
+        const cmp = a.slug.localeCompare(b.slug);
+        if (cmp) return cmp;
+      }
+      return a.index - b.index; // estável: preserva a ordem interna
+    })
+    .map((x) => x.p);
+}
+
+/* Correção de dados antigos no LocalStorage:
+   "Samurai" não é uma linha própria — pertence à linha Prospex. */
+function normalizeCollections(products) {
+  return products.map((p) =>
+    p.collection === "Samurai" ? { ...p, collection: "Prospex" } : p,
+  );
+}
 /* ============ CAMADA DE PERSISTÊNCIA (LocalStorage) ============
    Para migrar para API/Supabase/Firebase, reescreva apenas
    ProductStore.load() e ProductStore.save().                     */
@@ -513,7 +752,7 @@ const ProductStore = {
       if (!raw) return structuredClone(DEFAULT_PRODUCTS);
       const parsed = JSON.parse(raw);
       return Array.isArray(parsed) && parsed.length
-        ? parsed
+        ? normalizeCollections(parsed)
         : structuredClone(DEFAULT_PRODUCTS);
     } catch (e) {
       console.warn("Falha ao ler o catálogo salvo, usando dados padrão.", e);
@@ -528,7 +767,7 @@ const ProductStore = {
   },
   /* Somente os produtos que devem aparecer na vitrine */
   catalog() {
-    return this.load().filter((p) => p.visible !== false);
+    return sortByCollection(this.load().filter((p) => p.visible !== false));
   },
   nextId(products) {
     return products.reduce((max, p) => Math.max(max, Number(p.id) || 0), 0) + 1;
